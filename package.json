@@ -1,0 +1,14 @@
+{
+  "name": "project-04-food-site",
+  "version": "1.0.0",
+  "description": "It's a online food sites & services",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css"
+  },
+  "author": "Salman Farshe",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
