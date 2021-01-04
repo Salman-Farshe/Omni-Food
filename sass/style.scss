@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --primary-color: #e67e22;
+    --secondary-color: #ff7904;
+    --light-color: #ffffff;
+    --dark-color: #555555;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    color: #ffffff;
+    color: var(--light-color);
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
 }
 html, body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
+    text-rendering: auto;
 }
 
 header{
@@ -22,10 +33,10 @@ header{
         width: 100vw;
         height: 100vh;
         .nav-bar{
+            padding: 0 4%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 0rem 1rem;
             .logo{
                 margin-top: 1.2rem;
                 img{
@@ -46,23 +57,47 @@ header{
                         text-decoration: none;
                         padding: 0.5rem 0rem;
                         text-transform: uppercase;
-    
+                    }
+                    &:focus, :hover{
+                        border-bottom: 2px solid var(--primary-color);
+                        transition: border-bottom 0.01ms;
                     }
                 }
             }
         }
         .main-text{
+            color: var(--dark-color);
             width: 100%;
-            color: #555555;
+            margin: auto;
+            padding: 0 2%;
             position: absolute;
             top: 50%;
-            margin: auto;
             h1{
                 text-transform: uppercase;
-                padding: 0rem 0.2rem;
+                padding: 0rem 1rem;
                 letter-spacing: 1px;
                 word-spacing: 4px;
-                text-align: center;
+                text-align: left;
+            }
+            .btn-hungry, .btn-show{
+                border: 1px solid var(--primary-color);
+                margin: 1rem;
+                padding: 0.5rem 1.2rem;
+                border-radius: 15rem;
+            }
+            .btn-hungry{
+                background-color: var(--primary-color);
+                color: var(--light-color);
+                &:hover, :focus{
+                    background-color: var(--secondary-color);
+                }
+            }
+            .btn-show{
+                color: var(--primary-color);
+                &:hover, :focus{
+                    color: var(--light-color);
+                   background-color: var(--secondary-color);
+                }
             }
         }
     }
