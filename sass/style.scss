@@ -5,12 +5,27 @@
     --light-color: #ffffff;
     --dark-color: #555555;
 }
+%featureColor{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+%spacing{
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+%myparagraph{
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     color: var(--light-color);
+    scroll-behavior: smooth;
 }
 .btn{
     display: inline-block;
@@ -100,5 +115,77 @@ header{
                 }
             }
         }
+    }
+}
+
+// feature section 
+#feature{
+    display: block;
+    width: 100vw;
+    min-height: 100%;
+    padding: 5rem 0rem;
+    .row{
+        margin: 0 auto;
+        padding: 0 2%;
+        h2, p{
+            @extend %featureColor;
+            text-align: center;
+        }
+        h2{
+            @extend %spacing;
+            margin-bottom: 2rem;
+        }
+        .featuredash{
+            display: block;
+            max-width: 100px;
+            max-height: 2px;
+            border-bottom: 2px solid var(--primary-color);
+            transition: border-bottom 0.2s;
+            margin: 0 auto;
+        }
+        p{
+            max-width: 70%;
+            margin: 1rem auto;
+            @extend %myparagraph;
+        }
+    }
+    .animated-feature{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4%;
+        margin-top: 3rem;
+        animation-name: myfeature;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-direction: normal;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: initial;
+        animation-fill-mode: both;
+        .col{
+            i, h4, p{
+                @extend %featureColor;
+                text-align: left;
+            }
+            p{
+                @extend %myparagraph;
+                letter-spacing: 0;
+                max-width: 90%;
+                margin-left: 0;
+                padding-left: 0;
+            }
+            i{
+                color: var(--primary-color);
+                margin: 0.5rem 0rem;
+            }
+        }
+    }
+}
+@keyframes myfeature{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

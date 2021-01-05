@@ -5,12 +5,27 @@
   --light-color: #ffffff;
   --dark-color: #555555; }
 
+#feature .row h2, #feature .row p, #feature .animated-feature .col i, #feature .animated-feature .col h4, #feature .animated-feature .col p {
+  background-color: var(--light-color);
+  color: var(--dark-color); }
+
+#feature .row h2 {
+  letter-spacing: 1px;
+  word-spacing: 3px; }
+
+#feature .row p, #feature .animated-feature .col p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 100;
+  letter-spacing: 1px; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
-  color: var(--light-color); }
+  overflow-x: hidden;
+  color: var(--light-color);
+  scroll-behavior: smooth; }
 
 .btn {
   display: inline-block;
@@ -85,3 +100,55 @@ header {
         header .container .main-text .btn-show:hover, header .container .main-text .btn-show :focus {
           color: var(--light-color);
           background-color: var(--secondary-color); }
+
+#feature {
+  display: block;
+  width: 100vw;
+  min-height: 100%;
+  padding: 5rem 0rem; }
+  #feature .row {
+    margin: 0 auto;
+    padding: 0 2%; }
+    #feature .row h2, #feature .row p {
+      text-align: center; }
+    #feature .row h2 {
+      margin-bottom: 2rem; }
+    #feature .row .featuredash {
+      display: block;
+      max-width: 100px;
+      max-height: 2px;
+      border-bottom: 2px solid var(--primary-color);
+      transition: border-bottom 0.2s;
+      margin: 0 auto; }
+    #feature .row p {
+      max-width: 70%;
+      margin: 1rem auto; }
+  #feature .animated-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin-top: 3rem;
+    animation-name: myfeature;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: initial;
+    animation-fill-mode: both; }
+    #feature .animated-feature .col i, #feature .animated-feature .col h4, #feature .animated-feature .col p {
+      text-align: left; }
+    #feature .animated-feature .col p {
+      letter-spacing: 0;
+      max-width: 90%;
+      margin-left: 0;
+      padding-left: 0; }
+    #feature .animated-feature .col i {
+      color: var(--primary-color);
+      margin: 0.5rem 0rem; }
+
+@keyframes myfeature {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
