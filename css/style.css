@@ -172,4 +172,4 @@ header {
       #food-menu .container img:hover {
         opacity: 1;
         transform: scale(0.9);
-        transition: opacity 1.5s; }
+        transition: transform 1.5s, opacity 1.5s; }
