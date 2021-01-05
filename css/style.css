@@ -152,3 +152,24 @@ header {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+#food-menu {
+  max-width: 100vw;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 2rem 0rem; }
+  #food-menu .container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0.1rem;
+    overflow: hidden; }
+    #food-menu .container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: 0.7; }
+      #food-menu .container img:hover {
+        opacity: 1;
+        transform: scale(0.9);
+        transition: opacity 1.5s; }
