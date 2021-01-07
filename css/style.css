@@ -9,7 +9,7 @@
   background-color: var(--light-color);
   color: var(--dark-color); }
 
-#feature .row h2, #works h2 {
+#city .container h2, #feature .row h2, #works h2 {
   letter-spacing: 1px;
   word-spacing: 3px; }
 
@@ -18,6 +18,11 @@
   font-size: 0.9rem;
   font-weight: 100;
   letter-spacing: 1px; }
+
+#city .container h2 {
+  color: #555555;
+  text-align: center;
+  margin: 3rem auto; }
 
 * {
   margin: 0;
@@ -230,3 +235,44 @@ header {
             display: block;
             width: 100%;
             margin: auto; }
+
+#city {
+  max-width: 100vw;
+  min-height: 100%;
+  padding: 0 2%;
+  overflow: hidden; }
+  #city .container h2 {
+    color: var(--dark-color); }
+  #city .container .citydash {
+    display: block;
+    max-width: 100px;
+    max-height: 2px;
+    border-bottom: 2px solid var(--primary-color);
+    margin: -1rem auto; }
+  #city .container .cities {
+    padding: 2rem 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #city .container .cities .city-one, #city .container .cities .city-two, #city .container .cities .city-three, #city .container .cities .city-four {
+      padding-left: 1rem;
+      margin: 1rem auto; }
+      #city .container .cities .city-one img, #city .container .cities .city-two img, #city .container .cities .city-three img, #city .container .cities .city-four img {
+        display: block;
+        width: 90%;
+        height: auto; }
+      #city .container .cities .city-one h4, #city .container .cities .city-two h4, #city .container .cities .city-three h4, #city .container .cities .city-four h4 {
+        color: #3a3a3a;
+        margin: 0.5rem auto;
+        font-weight: 300; }
+      #city .container .cities .city-one p, #city .container .cities .city-two p, #city .container .cities .city-three p, #city .container .cities .city-four p {
+        color: var(--dark-color);
+        font-weight: 100;
+        font-size: medium;
+        padding: 0.3rem; }
+        #city .container .cities .city-one p i, #city .container .cities .city-two p i, #city .container .cities .city-three p i, #city .container .cities .city-four p i {
+          display: inline-block;
+          color: var(--primary-color);
+          margin-right: 0.2rem; }
+        #city .container .cities .city-one p a, #city .container .cities .city-two p a, #city .container .cities .city-three p a, #city .container .cities .city-four p a {
+          color: var(--primary-color); }
