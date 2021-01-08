@@ -9,7 +9,7 @@
   background-color: var(--light-color);
   color: var(--dark-color); }
 
-#city .container h2, #feature .row h2, #works h2 {
+#city .container h2, #customer .container h2, #feature .row h2, #works h2 {
   letter-spacing: 1px;
   word-spacing: 3px; }
 
@@ -19,7 +19,7 @@
   font-weight: 100;
   letter-spacing: 1px; }
 
-#city .container h2 {
+#city .container h2, #customer .container h2 {
   color: #555555;
   text-align: center;
   margin: 3rem auto; }
@@ -276,3 +276,40 @@ header {
           margin-right: 0.2rem; }
         #city .container .cities .city-one p a, #city .container .cities .city-two p a, #city .container .cities .city-three p a, #city .container .cities .city-four p a {
           color: var(--primary-color); }
+
+#customer {
+  width: 100vw;
+  min-height: 100%;
+  background: url("../image/back-customers.jpg") no-repeat center center/cover;
+  background-attachment: fixed; }
+  #customer .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    min-height: 100%;
+    padding: 0 2%; }
+    #customer .container h2 {
+      color: var(--light-color); }
+    #customer .container .customerdash {
+      display: block;
+      max-width: 100px;
+      max-height: 2px;
+      border-bottom: 2px solid var(--secondary-color);
+      margin: 1rem auto; }
+    #customer .container .reviews {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 4rem auto;
+      padding: 0 2%; }
+      #customer .container .reviews .customer-one, #customer .container .reviews .customer-two, #customer .container .reviews .customer-three {
+        padding: 1rem; }
+        #customer .container .reviews .customer-one p, #customer .container .reviews .customer-two p, #customer .container .reviews .customer-three p {
+          font-size: 1rem;
+          font-weight: 100; }
+        #customer .container .reviews .customer-one img, #customer .container .reviews .customer-two img, #customer .container .reviews .customer-three img {
+          display: inline-block;
+          border-radius: 50%;
+          max-width: 20%;
+          margin: 1.5rem auto; }
+        #customer .container .reviews .customer-one .cname, #customer .container .reviews .customer-two .cname, #customer .container .reviews .customer-three .cname {
+          display: inline-block; }

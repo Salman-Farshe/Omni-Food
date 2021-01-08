@@ -346,3 +346,50 @@ header{
         }
     }
 }
+// customer section 
+#customer{
+    width: 100vw;
+    min-height: 100%;
+    background: url('../image/back-customers.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    .container{
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        width: 100vw;
+        min-height: 100%;
+        padding: 0 2%;
+        h2{
+            @extend %myh2;
+            color: var(--light-color);
+        }
+        .customerdash{
+            display: block;
+            max-width: 100px;
+            max-height: 2px;
+            border-bottom: 2px solid var(--secondary-color);
+            margin: 1rem auto;
+        }
+        .reviews{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 4rem auto;
+            padding: 0 2%;
+            .customer-one, .customer-two, .customer-three{
+                padding: 1rem;
+                p{
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+                img{
+                    display: inline-block;
+                    border-radius: 50%;
+                    max-width: 20%;
+                    margin: 1.5rem auto;
+                }
+                .cname{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
