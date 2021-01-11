@@ -475,7 +475,7 @@ header{
     background-color: var(--light-color);
     color: var(--dark-color);
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: 100%;
     h2{
         @extend %myh2;
     }
@@ -518,6 +518,29 @@ header{
                 border: var(--primary-color) solid 1px;
                 border-radius: 1rem;
                 font-size: 1rem;
+            }
+        }
+    }
+}
+// footer section
+footer{
+    max-width: 100vw;
+    min-height: 100%;
+    background-color: #333333;
+    .text{
+        width: 80%;
+        margin: 0rem auto;
+        padding: 2rem;
+        p{
+            color: #888888;
+            font-size: 0.8rem;
+            font-weight: 100 normal;
+            text-align: center;
+            margin: 1rem auto;
+            line-height: 1.5;
+            & i{
+                color: #f11919;
+                margin: 0rem 0.1rem;
             }
         }
     }
