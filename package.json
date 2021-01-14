@@ -4,7 +4,7 @@
   "description": "It's a online food sites & services",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/style.scss css/style.css && node-sass sass/desktop.scss css/desktop.css"
+    "compile:sass": "node-sass sass/style.scss css/style.css && node-sass sass/desktop.scss css/desktop.css && node-sass sass/tablet.scss css/tablet.css"
   },
   "author": "Salman Farshe",
   "license": "ISC",

@@ -1,0 +1,86 @@
+@import "style";
+// header section
+header{
+    .container{
+        .nav-bar{
+            .logo{
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .nav-menu{
+                margin-top: 2rem;
+                justify-content: space-between;
+                li{
+                    margin-left: 1.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+// feature section 
+#feature{
+    .animated-feature{
+        .col{
+            margin: 0rem 0.3rem;
+            h4{
+                font-size: 0.8rem;
+            }
+            i{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+// works section
+#works{
+    .container{
+        .right{
+            .one, .two, .three{
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .appstore{
+                a{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+// city section
+#city{
+    .container{
+        .cities{
+            padding: 2rem 0%;
+            justify-content: flex-start;
+            .city-one, .city-two, .city-three, .city-four{
+                padding-left: 0rem;
+                h4{
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+                p{
+                    padding: 0rem;
+                    i, a{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+// pricing section
+#price{
+    .container{
+        .row{
+            .card{
+                margin: 0rem 0.5rem;
+            }
+        }
+    }
+}
