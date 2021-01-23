@@ -428,5 +428,11 @@ footer {
         color: #f11919;
         margin: 0rem 0.1rem; }
 
-#price .container .row .card {
-  margin: 0rem 1rem; }
+#price {
+  min-height: 100%;
+  padding-bottom: 3rem; }
+  #price .container .row .card {
+    margin: 0rem 1rem; }
+
+#works {
+  height: 100%; }

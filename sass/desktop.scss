@@ -1,6 +1,8 @@
 @import "style";
 // pricing section
 #price{
+    min-height: 100%;
+    padding-bottom: 3rem;
     .container{
         .row{
             .card{
@@ -8,4 +10,9 @@
             }
         }
     }
+}
+
+// work section 
+#works{
+    height: 100%;
 }
