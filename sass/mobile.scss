@@ -1,0 +1,93 @@
+@import 'style';
+*{
+    font-size: 1rem;
+}
+// header section
+header{
+    .container{
+        .nav-bar{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            .nav-menu{
+                margin-top: 1rem;
+                flex-direction: column;
+                li{
+                    margin: 0.2rem auto;
+                }
+            }
+        }
+    }
+}
+// feature section
+#feature{
+    padding: 3rem 0rem;
+    .animated-feature{
+        flex-direction: column;
+        padding: 0rem 0%;
+        padding-left: 6%;
+        .col{
+            h4, i{
+                display: block;
+                text-align: center;
+                margin: 0rem auto;
+            }
+        }
+    }
+}
+// work section
+#works{
+    padding-bottom: 0rem;
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        .right{
+            margin: 1rem auto;
+        }
+    }
+}
+// city section
+#city{
+    .container{
+        .cities{
+            padding: 1rem 0rem;
+            flex-direction: column;
+        }
+    }
+}
+// customer section
+#customer{
+    .container{
+        .reviews{
+            flex-direction: column;
+        }
+    }
+}
+// pricing section
+#price{
+    .container{
+        padding-bottom: 1rem;
+        .row{
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2% 0%;
+            .card{
+                border: 1px solid grey;
+                margin: 1rem auto;
+            }
+        }
+    }
+}
+// contact section
+#contact{
+    .form{
+        max-width: 90%;
+    }
+}
+// footer section
+footer{
+    .text{
+        width: 100%;
+        padding: 1rem;
+    }
+}
