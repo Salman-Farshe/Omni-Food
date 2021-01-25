@@ -491,3 +491,11 @@ header .container .nav-bar {
 footer .text {
   width: 100%;
   padding: 1rem; }
+
+#works .container .right {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row: auto auto auto auto; }
+
+#contact .form {
+  max-width: 98%; }

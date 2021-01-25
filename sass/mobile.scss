@@ -43,6 +43,14 @@ header{
         grid-template-rows: auto auto;
         .right{
             margin: 1rem auto;
+            .appstore{
+                a{
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 0rem;
+                    margin: 0rem auto;
+                }
+            }
         }
     }
 }

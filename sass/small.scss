@@ -1,0 +1,17 @@
+@import 'mobile';
+// work section
+#works{
+    .container{
+        .right{
+            display: grid;
+            grid-template-columns: auto;
+            grid-row: auto auto auto auto;
+        }
+    }
+}
+// contact section
+#contact{
+    .form{
+        max-width: 98%;
+    }
+}
