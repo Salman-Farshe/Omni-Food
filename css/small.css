@@ -453,7 +453,7 @@ header .container .nav-bar {
     #feature .animated-feature .col h4, #feature .animated-feature .col i {
       display: block;
       text-align: center;
-      margin: 0rem auto; }
+      margin: 0.5rem auto; }
 
 #works {
   padding-bottom: 0rem; }
