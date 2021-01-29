@@ -439,7 +439,8 @@ header .container .nav-bar .nav-menu {
   margin-top: 2rem;
   justify-content: space-between; }
   header .container .nav-bar .nav-menu li {
-    margin-left: 1.5rem;
+    overflow: hidden;
+    margin-left: 1rem;
     font-size: 1rem; }
 
 #feature .animated-feature .col {
