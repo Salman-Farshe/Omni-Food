@@ -442,7 +442,8 @@ header .container .nav-bar {
     margin-top: 1rem;
     flex-direction: column; }
     header .container .nav-bar .nav-menu li {
-      margin: 0.2rem auto; }
+      margin: 0.2rem auto;
+      overflow: hidden; }
 
 #feature {
   padding: 3rem 0rem; }
